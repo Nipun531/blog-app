@@ -1,0 +1,330 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
+a{
+  cursor: pointer;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333; 
+  background: url('C:\Users\sharm\OneDrive\Desktop\coding\blog app\client\Brown Vintage Background Document.png') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  /* background-color: rgba(255, 255, 255, 0.8);  */
+  background-color: transparent;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0 50px;
+  background-color: beige;
+  padding: 15px 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+header a.Logo {
+  font-weight: bold;
+  font-size: 2.2rem;
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+header nav {
+  display: flex;
+  gap: 20px;
+}
+
+header nav a {
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #1a73e8;
+  color: white;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  background-color: #1558c0;
+} */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0 50px;
+  background-color: beige;
+  padding: 15px 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+header a.Logo {
+  font-weight: bold;
+  font-size: 2.2rem;
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+header nav {
+  display: flex;
+  align-items: center; /* Ensures all items in the nav are aligned vertically */
+  gap: 20px;
+}
+
+header nav a {
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #1a73e8;
+  color: white;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  background-color: #1558c0;
+}
+
+header nav span {
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+header nav a.logout {
+  cursor: pointer; /* Makes it clear it's clickable */
+}
+
+
+div.post {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  margin-bottom: 30px;
+  background-color: rgb(241, 241, 220); 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+div.post:hover {
+  transform: translateY(-5px);
+}
+
+div.post img {
+  max-width: 120px;
+  max-height: 90px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+div.post div.texts {
+  flex-grow: 1;
+}
+
+div.texts h2 {
+  margin: 0;
+  font-size: 1.6rem;
+  color: #333;
+}
+
+div.post p.info {
+  margin: 6px 0;
+  color: #666; 
+  font-size: 0.85rem;
+  font-weight: bold;
+  display: flex;
+  gap: 15px;
+}
+
+div.post p.info a.author {
+  color: #1a73e8;
+}
+
+div.post p.summary {
+  margin-top: 10px;
+  line-height: 1.6rem;
+  color: #444;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #1a73e8;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1558c0;
+}
+
+button.logout {
+  background-color: #f44336;
+}
+
+button.logout:hover {
+  background-color: #c62b1e;
+}
+
+
+form.login, form.register {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: transparent;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px 15px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 1rem;
+}
+
+button {
+  width: 100%;
+  display: block;
+  background-color: #1a73e8;
+  border: 0;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 0;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1558c0;
+}
+
+form.login,form.register h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+div.post-page {
+  max-width: 900px;
+  margin: 20px auto;
+  background-color: beige; /* Transparent background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+div.post-page h1 {
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+  margin: 20px 0;
+}
+
+div.post-page time {
+  display: block;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-bottom: 10px;
+}
+
+div.post-page div.author {
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+div.post-page div.image {
+  display: flex;
+  justify-content: center;
+  max-height: 400px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+div.post-page div.image img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+div.post-page div.content {
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+  color: #444;
+  margin-top: 20px;
+  text-align: justify;
+}
+
+div.post-page div.content p {
+  margin-bottom: 20px;
+}
+
+div.post-page div.content h2, h3 {
+  color: #333;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  text-align: left;
+  font-weight: bold;
+}
+
+div.post-page div.content a {
+  color: #1a73e8;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+div.post-page div.content a:hover {
+  color: #1558c0;
+}
+
+
+div.edit-row{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+div.post-page a.edit-btn{
+  background-color: #333;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #fff;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+a svg{
+  height: 20px;
+}
